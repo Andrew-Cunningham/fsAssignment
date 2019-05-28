@@ -1,7 +1,7 @@
 var fs = require('fs');
 
-fs.readFileSync('./challenge1/info.txt', 'utf-8')
-
+let contents=fs.readFileSync('./challenge1/info.txt', 'utf-8')
+console.log(contents)
 let names = fs.readFileSync('./challenge2/info.txt', 'utf-8')
 names = names + '\nAndrew'
 fs.writeFileSync('./challenge2/info.txt', names)
